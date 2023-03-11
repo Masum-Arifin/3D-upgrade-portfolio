@@ -1,3 +1,4 @@
+import { LineCurve } from "three";
 import {
   mobile,
   backend,
@@ -200,7 +201,7 @@ const projects = [
   {
     name: "Lf Zero",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "1. Learn from Zero is an Online Educational Platform Web application. 2. Two types of users on this site such as students & Instructors.3. Some parts are for Studnet.",
     tags: [
       {
         name: "react",
@@ -216,12 +217,13 @@ const projects = [
       },
     ],
     image: carrent,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/rezainiet/lfzero-client",
+    live_link: "https://learn-from-zero.vercel.app/"
   },
   {
-    name: "Job IT",
+    name: "GPT-3 Project",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "This is an amazing project with cool UI interface request early access to get started The possiblities are beyond your imagination GPT-3 and Open AI is the future, let us explore ",
     tags: [
       {
         name: "react",
@@ -237,12 +239,14 @@ const projects = [
       },
     ],
     image: jobit,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/Masum-Arifin/open-ai",
+    live_link: "https://gpt3-openai-project.netlify.app/",
+
   },
   {
-    name: "Trip Guide",
+    name: "Restaurant Website",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A Responsive restaurant website design with great UI Effect Take your love for continental food a notch higher with our delicious continental food menu.",
     tags: [
       {
         name: "nextjs",
@@ -258,7 +262,9 @@ const projects = [
       },
     ],
     image: tripguide,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/Masum-Arifin/GR-restaurant-website",
+    live_link: "https://gericht-restaurant-website.netlify.app/"
+    
   },
 ];
 
