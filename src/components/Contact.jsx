@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
+import Swal from 'sweetalert2'
 
 import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
@@ -14,6 +15,8 @@ const Contact = () => {
     email: "",
     message: "",
   });
+
+
 
   const [loading, setLoading] = useState(false);
 
@@ -50,7 +53,11 @@ const Contact = () => {
       .then(
         () => {
           setLoading(false);
-          alert("Thank you. I will get back to you as soon as possible.");
+          Swal.fire({
+            icon: 'success',
+            title: 'Your message has been sent',
+            showConfirmButton: true,
+          });
 
           setForm({
             name: "",
@@ -62,7 +69,12 @@ const Contact = () => {
           setLoading(false);
           console.log(error);
 
-          alert("Ahh, something went wrong. Please try again.");
+          Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Something went wrong!',
+            showConfirmButton: false,
+          });
         }
       );
   };
